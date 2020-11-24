@@ -1,3 +1,6 @@
+// Basic MariaDB
+// connection
+
 const mariadb = require('mariadb');
 const pool = mariadb.createPool({
      host:     '54.244.173.135',
@@ -7,6 +10,9 @@ const pool = mariadb.createPool({
      connectionLimit: 5
 });
 
+
+// Our logic to interact
+// with it with less coding
 
 const query = async (query, arguments) => {
     try {
@@ -42,6 +48,8 @@ const maria = {
     flow,
 };
 
+
+// Usage examples
 
 const someBusinessLogicMethod = async () => {
 
